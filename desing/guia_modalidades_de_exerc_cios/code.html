@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab_search" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error-container": "#93000a", "on-secondary-fixed": "#201b16", "secondary-fixed": "#ebe0d9", "surface-variant": "#373432", "surface-container-high": "#2c2927", "surface-bright": "#3c3936", "on-error-container": "#ffdad6", "on-primary-container": "#5a2b00", "surface": "#151311", "secondary": "#cfc5bd", "surface-tint": "#ffb783", "outline-variant": "#564336", "on-secondary": "#352f2a", "on-primary-fixed": "#301400", "background": "#151311", "tertiary": "#cfc4be", "on-secondary-container": "#c0b7af", "surface-container-lowest": "#100e0c", "secondary-container": "#4f4842", "inverse-surface": "#e8e1dd", "on-secondary-fixed-variant": "#4c4640", "error": "#ffb4ab", "inverse-primary": "#934b00", "on-primary": "#4f2500", "on-tertiary": "#362f2b", "primary-fixed": "#ffdcc5", "on-surface": "#e8e1dd", "on-error": "#690005", "on-tertiary-fixed": "#201a17", "surface-container-highest": "#373432", "on-primary-fixed-variant": "#703700", "inverse-on-surface": "#33302d", "on-surface-variant": "#dcc1b0", "surface-container": "#221f1d", "primary": "#ffb783", "tertiary-fixed": "#ece0da", "on-background": "#e8e1dd", "tertiary-fixed-dim": "#cfc4be", "surface-dim": "#151311", "tertiary-container": "#a99f99", "primary-container": "#f28522", "on-tertiary-container": "#3d3732", "outline": "#a48c7c", "on-tertiary-fixed-variant": "#4d4541", "primary-fixed-dim": "#ffb783", "secondary-fixed-dim": "#cfc5bd", "surface-container-low": "#1d1b19" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "gutter": "1rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "metric-display": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>body { min-height: max(884px, 100dvh); }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.15)]"><div class="h-32 px-margin flex flex-col justify-center gap-space-sm"><div class="flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><span class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Exercícios</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notificações" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a aria-label="Perfil" class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none" data-path="perfil" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGibSXM8V18f0PgKjdXC6gsK6u71x3yaAaA5-bxFvLQ8G3Jm9c7MdvDUXoevxp8XM_6orc9ViGkJ_ay95QWEWOXTb3djkzONjtvXZZXfTV0nJyClwpKJu0W9oLLPSxTioWhUmFF0E9AThTdfKBS7dAufwhZfthpKMd5D35ziNvRWs-XChfCx1PSg0egXrBbGk5pfeq9bkky8uruBF-FuJOjScOoi4Th853DPU69dQF"/></a></div></div><div class="flex items-center gap-space-sm"><div class="flex-1 flex items-center h-10 px-3 bg-surface-container rounded-xl gap-2 focus-within:ring-1 focus-within:ring-primary-container/50"><span class="material-symbols-outlined text-[20px] text-on-surface-variant">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Buscar exercício ou equipamento..." type="text"/></div><button aria-label="Filtros" class="h-10 w-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface active:bg-surface-variant transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button></div></div></header><main class="flex flex-col relative w-full pt-32 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Content Container with strict mobile rhythm -->
+<div class="flex flex-col gap-space-lg px-margin pb-6">
+<!-- INTRO HEADER BLOCK -->
+<section class="flex flex-col gap-space-xs pt-1">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+        3 Modalidades Ativas • 450+ Vídeos &amp; Guias 3D
+      </div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight mt-1">
+        Guia de Exercícios
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Aprenda a técnica correta, biomecânica e dicas de execução passo a passo para dominar cada movimento.
+      </p>
+</section>
+<!-- HORIZONTAL QUICK FILTER PILLS -->
+<section class="flex flex-col gap-space-xs -mx-margin px-margin overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-space-xs min-w-max py-0.5" id="filter-pills-container">
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-transform active:scale-95" data-filter="all" type="button">
+          Todos os Níveis
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="iniciante" type="button">
+          Iniciante
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="intermediario" type="button">
+          Intermediário
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="avancado" type="button">
+          Avançado
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="bodyweight" type="button">
+          Com Peso Corporal
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="halteres" type="button">
+          Halteres
+        </button>
+<button class="filter-pill inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-transform active:scale-95" data-filter="3d" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+          Vídeo 3D
+        </button>
+</div>
+</section>
+<!-- SECTION TITLE: MODALIDADES -->
+<div class="flex items-baseline justify-between pt-1">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+        Modalidades Principais
+      </h2>
+<span class="font-label-md text-label-md text-on-surface-variant">Selecione para focar</span>
+</div>
+<!-- 3 PRIMARY CATEGORY HUB CARDS -->
+<div class="flex flex-col gap-space-lg">
+<!-- CARD 1: MUSCULAÇÃO -->
+<article class="relative flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md group">
+<!-- Visual Accent Header Image -->
+<div class="relative w-full h-44 bg-surface-container-lowest overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Muscular male bodybuilder bench pressing a heavy barbell with chalked hands and intense focus inside an underground dark industrial fitness gym, warm amber tungsten lighting illuminating sweat droplets, hyper-detailed athletic physique in charcoal tone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCca618gZ-my8tTz0CZGGNHAhWQZ7pEgnUJCvhY2bP7jGzLcgQYRW4Bu3-dpXZRv4jgR1R6ITiLuiUFBQo9pV9cEhe02QB0TFABIWX0X5ZGXxKgqbn7t2SlB7ZTCFYVA4y_ACoujnqa6-pl4mJRIto7dmtQpDjEQVjgcZXYYzadGU7i9_9r1L4dUzOT78S06Io-Crldnkn4I_PxFQ__XZFrCqi8WiGmB6IhpRZV26NI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<!-- Category Pill and Badge Overlay -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+              Hipertrofia &amp; Força
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+              184 Exercícios
+            </span>
+</div>
+<div class="absolute bottom-2 left-4 right-4 flex items-center gap-2 text-on-surface">
+<h3 class="font-headline-lg text-headline-lg tracking-tight">Musculação</h3>
+</div>
+</div>
+<!-- Body & Details -->
+<div class="flex flex-col gap-space-md p-space-md pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">biotech</span>
+<span>Biomecânica, Sobrecarga Progressiva &amp; Ângulos</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+            Técnica apurada de supino, agachamento livre, remadas, controle articular rigoroso, timing respiratório e prevenção de lesões.
+          </p>
+<!-- Quick Muscle Chips -->
+<div class="flex flex-wrap gap-space-xs pt-0.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Peito</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Costas</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Pernas</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Braços</span>
+</div>
+<!-- Action CTA Button -->
+<a class="inline-flex items-center justify-between w-full h-13 px-space-md mt-1 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:opacity-95 active:scale-[0.99] transition-all" data-path="exercicios-musculacao" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+              Ver Exercícios de Musculação
+            </span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- CARD 2: ARTES MARCIAIS -->
+<article class="relative flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md group">
+<!-- Visual Header Image -->
+<div class="relative w-full h-44 bg-surface-container-lowest overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Athletic female combat fighter with braided hair in boxing wraps and shorts throwing a precise hook punch at a vintage leather heavy bag in a dark moody gym with exposed brick walls, atmospheric warm amber downlights and chalk mist" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwuOta74kLbfg5Bz-L_WC-vKKFkLo8QhFW5Xo4AVZILkA1CToc84Pqyi8S5r1EE7URIFfE07XtbBiectx3F537rkUNS4km9Ie5Lbzm6903qhvLUKfn4-fdavCmBGgRfc-T6ZlWDdm5zpsk9xi-ZUQxTk25QaXYgtAJZ68YZDiV8-x4JpDmbd4PuG-KIUebTjxeW7ULIDGlKugxhaB7AHtSm8akHxDGE5yZLi8q3FG7')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<!-- Category Pill and Badge Overlay -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sports_martial_arts</span>
+              Combate &amp; Striking
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+              86 Técnicas
+            </span>
+</div>
+<div class="absolute bottom-2 left-4 right-4 flex items-center gap-2 text-on-surface">
+<h3 class="font-headline-lg text-headline-lg tracking-tight">Artes Marciais</h3>
+</div>
+</div>
+<!-- Body & Details -->
+<div class="flex flex-col gap-space-md p-space-md pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>Combos, Rotação de Quadril &amp; Cadência</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+            Fundamentos de golpes (Jab, Direto, Cruzados), movimentação tática de pernas (Footwork), esquivas pendulares e rounds guiados.
+          </p>
+<!-- Quick Muscle / Skill Chips -->
+<div class="flex flex-wrap gap-space-xs pt-0.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Boxe</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Muay Thai</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Defesa</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Footwork</span>
+</div>
+<!-- Action CTA Button -->
+<a class="inline-flex items-center justify-between w-full h-13 px-space-md mt-1 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:opacity-95 active:scale-[0.99] transition-all" data-path="exercicios-artes-marciais" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">sports_mma</span>
+              Ver Técnicas de Artes Marciais
+            </span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- CARD 3: CALISTENIA -->
+<article class="relative flex flex-col bg-surface-container rounded-2xl overflow-hidden shadow-md group">
+<!-- Visual Header Image -->
+<div class="relative w-full h-44 bg-surface-container-lowest overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Male calisthenics gymnast holding an immaculate horizontal full front lever on wooden Olympic rings suspended from a high ceiling, dark dramatic gym setting with warm spotlight reflecting along dorsal and core muscles" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmyWBx-HS1RTZk8DT2aIoAfJs8EcKBhkFFS_Q9nzKiNLZATq5y650Hs6MfAO81DgY5GurYOOquv8Met6tr5oDAseCsR8XUCEPHTmJCjWLtA7SBoK6uFVNfQdfZnlclK77IuqQXXh_cSVpMxQSSn6QKKxwcjwotXel6ggNKnS9jYra_Pj4z_KXKSqnqGv7ezUaxB25FZfF_0lwIY-7hkCbwC_em8TuHpbw34Ez_hAAo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+<!-- Category Pill and Badge Overlay -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+              Peso Corporal &amp; Isometria
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+              112 Progressões
+            </span>
+</div>
+<div class="absolute bottom-2 left-4 right-4 flex items-center gap-2 text-on-surface">
+<h3 class="font-headline-lg text-headline-lg tracking-tight">Calistenia</h3>
+</div>
+</div>
+<!-- Body & Details -->
+<div class="flex flex-col gap-space-md p-space-md pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">straighten</span>
+<span>Alavancas, Tensão Corporal &amp; Estabilidade</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+            Progressões meticulosas para Muscle-Up, Front Lever, Handstand, barras e flexões avançadas com controle de centro gravitacional.
+          </p>
+<!-- Quick Move Chips -->
+<div class="flex flex-wrap gap-space-xs pt-0.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Front Lever</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Muscle-Up</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Handstand</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Argolas</span>
+</div>
+<!-- Action CTA Button -->
+<a class="inline-flex items-center justify-between w-full h-13 px-space-md mt-1 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:opacity-95 active:scale-[0.99] transition-all" data-path="exercicios-calistenia" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">fitness_center</span>
+              Ver Movimentos de Calistenia
+            </span>
+<span class="material-symbols-outlined text-[22px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- FEATURED TUTORIALS / HOW-TO TODAY -->
+<section class="flex flex-col gap-space-md pt-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Biomecânica de Precisão
+          </div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+            Tutoriais em Destaque
+          </h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Ver Todos</a>
+</div>
+<!-- Video / Interactive mini cards horizontal feed -->
+<div class="flex flex-col gap-space-sm">
+<!-- Tutorial Item 1 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container rounded-xl active:bg-surface-container-high transition-colors">
+<div class="relative w-24 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up view of an athlete executing a strict bench press with chalked barbell on chest inside a dark athletic training facility with warm golden lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB48M02gqIz5hYbwoAT3q5m5VPAbe4L91_OXx4yDOTxoImaNOfuF-SIqBqQwMEXjGnGOBbfg_WyTYQPKxK-_pPVrFav-WDOhat-gOKAWdvDSvwICx9fdBX5w5b6NK4BJ97QRYd5FxOM6otbaO1FSoae-NenbipCAby2cHQ7Dx5ERqfRx4HuWIX6yldhGk9njKNL1mNg7Mg0rV_QHuEEWq4wSBl2owsTgk7DZR3VMdNx')"></div>
+<div class="absolute inset-0 bg-black/35 flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px] text-white drop-shadow">play_circle</span>
+</div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/80 font-body-sm text-[10px] text-white">3 min</span>
+</div>
+<div class="flex flex-col justify-center min-w-0 flex-1">
+<span class="font-label-md text-body-sm text-primary uppercase tracking-wider">Musculação</span>
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">
+              Supino Reto: Retração Escapular
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              Ponto zero de contato &amp; trajetória do cotovelo
+            </p>
+</div>
+<button aria-label="Abrir guia" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0 hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Tutorial Item 2 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container rounded-xl active:bg-surface-container-high transition-colors">
+<div class="relative w-24 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up action shot of boxing stance showing leg pivot and hip torque rotation on rubber flooring in dark gym with warm spotlights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYJDVbkcnt4k8yNKijetgkyM-KIOMayWugCFIe8LQ_EDVO8u7-7uCg00nQW-tquytrA5Vo7gX3jrFwt7e3pqn5DZySmQq-fOfRK0WYCbvMUPEsQ84ALsQzR45jC6CLus_G45Jy-Bv3qJ1Ga6MVpbrt7hh-We95UD1Bn1I_uGImvEjaDkAcgLVJ0H9XjNVlzDWo3SxKlr1N12pZMjrufF55BLdFy3KP5rBl6SYnaKz8')"></div>
+<div class="absolute inset-0 bg-black/35 flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px] text-white drop-shadow">play_circle</span>
+</div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/80 font-body-sm text-[10px] text-white">4 min</span>
+</div>
+<div class="flex flex-col justify-center min-w-0 flex-1">
+<span class="font-label-md text-body-sm text-primary uppercase tracking-wider">Artes Marciais</span>
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">
+              Combinação 1-2-3 &amp; Quadril
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              Sequência fluida de Jab, Direto e Cruzado
+            </p>
+</div>
+<button aria-label="Abrir guia" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0 hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Tutorial Item 3 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container rounded-xl active:bg-surface-container-high transition-colors">
+<div class="relative w-24 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<div class="w-full h-full bg-cover bg-center" data-alt="Gymnast performing scapular retraction and depression hang on steel pull-up bar, side angle focus on lats in dark moody gym" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrMXhhZrK6g-yRGcZP2PqOOTHPm67-0gS5wdibUw2tqQ-JKsTG686xVxGjU2fJdlW90UifhNnCttsK7R0l8eSXXbKupqr02Ly8eWJp-WXmeVTbSZeXQiusYtDsMnOrkAte3PeyHphQYWlnFtafZm4SUKzDfsJ9x0QYh62YseK_G3DFcOittW2HruuT7pB8WCCUcHLU7b4-0iKxWPka9bBV5CdH-OyBmHPFs-x9erpI')"></div>
+<div class="absolute inset-0 bg-black/35 flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px] text-white drop-shadow">play_circle</span>
+</div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/80 font-body-sm text-[10px] text-white">5 min</span>
+</div>
+<div class="flex flex-col justify-center min-w-0 flex-1">
+<span class="font-label-md text-body-sm text-primary uppercase tracking-wider">Calistenia</span>
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">
+              Front Lever: Ativação de Dorsal
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+              Depressão escapular e alavanca isométrica
+            </p>
+</div>
+<button aria-label="Abrir guia" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface flex-shrink-0 hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- QUICK DAILY TIP BANNER -->
+<div class="flex items-center gap-space-md p-space-md rounded-2xl bg-surface-container-high">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary">Dica Biomecânica do Dia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight mt-0.5">
+          A respiração diafragmática (Valsalva controlada) protege a coluna lombar em sobrecargas axiais acima de 75% 1RM.
+        </p>
+</div>
+</div>
+</div>
+<script>
+    // Lightweight micro-interaction for quick filter buttons
+    document.querySelectorAll('.filter-pill').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.filter-pill').forEach(btn => {
+          btn.classList.remove('bg-primary-container', 'text-on-primary');
+          btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        button.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        button.classList.add('bg-primary-container', 'text-on-primary');
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs grid grid-cols-4 items-center justify-items-center"><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="treinos" href="#"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Treinos</span></a><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="atividades" href="#"><span class="material-symbols-outlined text-[22px]">ecg_heart</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Atividades</span></a><a class="flex flex-col items-center justify-center w-full h-14 text-primary-container font-semibold transition-colors" data-path="exercicios" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Exercícios</span><span class="w-1 h-1 rounded-full bg-primary-container mt-0.5"></span></a><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Perfil</span></a></div></nav></body></html>

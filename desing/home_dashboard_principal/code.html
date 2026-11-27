@@ -1,0 +1,256 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error-container": "#93000a", "on-secondary-fixed": "#201b16", "secondary-fixed": "#ebe0d9", "surface-variant": "#373432", "surface-container-high": "#2c2927", "surface-bright": "#3c3936", "on-error-container": "#ffdad6", "on-primary-container": "#5a2b00", "surface": "#151311", "secondary": "#cfc5bd", "surface-tint": "#ffb783", "outline-variant": "#564336", "on-secondary": "#352f2a", "on-primary-fixed": "#301400", "background": "#151311", "tertiary": "#cfc4be", "on-secondary-container": "#c0b7af", "surface-container-lowest": "#100e0c", "secondary-container": "#4f4842", "inverse-surface": "#e8e1dd", "on-secondary-fixed-variant": "#4c4640", "error": "#ffb4ab", "inverse-primary": "#934b00", "on-primary": "#4f2500", "on-tertiary": "#362f2b", "primary-fixed": "#ffdcc5", "on-surface": "#e8e1dd", "on-error": "#690005", "on-tertiary-fixed": "#201a17", "surface-container-highest": "#373432", "on-primary-fixed-variant": "#703700", "inverse-on-surface": "#33302d", "on-surface-variant": "#dcc1b0", "surface-container": "#221f1d", "primary": "#ffb783", "tertiary-fixed": "#ece0da", "on-background": "#e8e1dd", "tertiary-fixed-dim": "#cfc4be", "surface-dim": "#151311", "tertiary-container": "#a99f99", "primary-container": "#f28522", "on-tertiary-container": "#3d3732", "outline": "#a48c7c", "on-tertiary-fixed-variant": "#4d4541", "primary-fixed-dim": "#ffb783", "secondary-fixed-dim": "#cfc5bd", "surface-container-low": "#1d1b19" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "gutter": "1rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "metric-display": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.15)]"><div class="h-16 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm min-w-0"><span class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Treinos</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notificações" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface active:bg-surface-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGibSXM8V18f0PgKjdXC6gsK6u71x3yaAaA5-bxFvLQ8G3Jm9c7MdvDUXoevxp8XM_6orc9ViGkJ_ay95QWEWOXTb3djkzONjtvXZZXfTV0nJyClwpKJu0W9oLLPSxTioWhUmFF0E9AThTdfKBS7dAufwhZfthpKMd5D35ziNvRWs-XChfCx1PSg0egXrBbGk5pfeq9bkky8uruBF-FuJOjScOoi4Th853DPU69dQF"></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-6 space-y-space-lg">
+<!-- Greeting Header Section -->
+<div class="px-margin flex items-center justify-between pt-space-xs">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight truncate">Olá, Sales</h1>
+<span class="inline-block animate-bounce text-base">🔥</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+        Atualize seu peso e suas medidas no app
+      </p>
+</div>
+<div class="relative flex-shrink-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Close up athletic male portrait with sweat glistening in dramatic warm amber studio lighting against a deep dark charcoal backdrop, focused intense expression, high end fitness aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASsVQUcalXF4TkHZAE6QepgZ6Jt3iIxKUwsb4e9KuWVQZFYFt8uGBSxBFCpdp5ywKvUsGuKubhQNf3YXbOz_BeBawgQtCI-94Dzdd8S66jhR0Fb71Qd-b4YBGb_1HuHXJfd80v8aPmP2S1TtQZo_FZCojnhqY1DRVrW7JVMSfF_khYErb0BBfwwKfcGBiuZ6saMzRfm9kXqOqZ9rsicebIGe4qvdFSDfgwJgHmIOpo">
+</div>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-primary-container rounded-full shadow-sm"></span>
+</div>
+</div>
+<!-- Weekly Horizontal Interactive Calendar Strip -->
+<div class="w-full pl-margin overflow-x-auto no-scrollbar py-1">
+<div class="flex items-center gap-space-xs pr-margin">
+<!-- Monday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Seg</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">23</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5 opacity-40"></span>
+</button>
+<!-- Tuesday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Ter</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container mt-1.5"></span>
+</button>
+<!-- Wednesday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Qua</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container mt-1.5"></span>
+</button>
+<!-- Thursday (Active/Current Day) -->
+<button class="flex flex-col items-center justify-center min-w-[58px] h-[74px] rounded-xl bg-primary-container text-on-primary-container shadow-[0_8px_20px_rgba(242,133,34,0.35)] transition-all transform scale-105 active:scale-100" type="button">
+<span class="font-label-md text-label-md text-on-primary font-bold uppercase tracking-wider">Qui</span>
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-primary font-extrabold mt-0.5 leading-none">26</span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary mt-1"></span>
+</button>
+<!-- Friday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Sex</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5 opacity-20"></span>
+</button>
+<!-- Saturday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Sáb</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5 opacity-20"></span>
+</button>
+<!-- Sunday -->
+<button class="flex flex-col items-center justify-center min-w-[52px] h-[70px] rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95 group" type="button">
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface">Dom</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1.5 opacity-20"></span>
+</button>
+</div>
+</div>
+<!-- Section 1: Hero Workout Banner "Treino Personalizado" -->
+<div class="px-margin">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-space-md shadow-xl"><div class="absolute -top-10 -right-10 w-48 h-48 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div><div class="relative z-10 flex flex-col space-y-space-md"><div class="flex items-center justify-between"><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-variant/80 backdrop-blur-sm border border-outline-variant/30"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-md text-[12px] text-on-surface font-bold tracking-tight">Ciclo: Hipertrofia &amp; Força</span></div><span class="font-label-md text-[12px] text-secondary font-semibold flex items-center gap-1.5 bg-surface-container-highest/80 px-2.5 py-1 rounded-full border border-outline-variant/30"><span class="material-symbols-outlined text-[15px] text-primary">verified</span>Semana 8</span></div><div class="pt-1"><div class="inline-flex items-center gap-1.5 text-primary font-label-md text-[11px] font-bold uppercase tracking-wider"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: &quot;FILL&quot; 1;">schedule</span>PRÓXIMO TREINO</div><h2 class="font-headline-lg text-[22px] text-on-surface font-extrabold tracking-tight mt-1">02 – Dorsais, Bíceps &amp; Antebraço</h2><p class="font-body-sm text-[13px] text-on-surface-variant mt-1 flex items-center gap-1.5">Hoje, 18:30 • ~60 min • 5 exercícios</p></div><div class="pt-1 flex items-center gap-space-sm"><button class="flex-1 h-12 py-3 px-5 rounded-full bg-primary-container hover:bg-primary text-on-primary flex items-center justify-center gap-2 shadow-[0_6px_20px_rgba(242,133,34,0.35)] active:scale-[0.98] transition-all" type="button"><span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span><span class="font-label-lg text-label-lg font-bold tracking-tight">Iniciar Próximo Treino</span></button><button aria-label="Ver ficha do treino" class="w-12 h-12 rounded-full bg-surface-container-highest hover:bg-surface-variant text-on-surface flex items-center justify-center transition-colors active:scale-95 flex-shrink-0 border border-outline-variant/30" type="button"><span class="material-symbols-outlined text-[20px]">description</span></button></div><div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between"><div class="flex items-center gap-2"><span class="font-label-md text-[12px] text-on-surface-variant font-medium">Consistência:</span><span class="font-label-md text-[12px] text-primary font-bold">3 de 5 Treinos</span></div><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(242,133,34,0.6)]"></span><span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(242,133,34,0.6)]"></span><span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_rgba(242,133,34,0.6)]"></span><span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span><span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span></div></div></div></div>
+</div>
+<!-- Section 2: "Meus treinos" Carousel -->
+<div class="flex flex-col space-y-space-sm">
+<div class="px-margin flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-4 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Meus treinos</h3>
+</div>
+<button aria-label="Criar treino" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/10 hover:bg-primary-container/20 text-primary transition-colors text-label-md font-label-md" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Criar</span></button><button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-0.5" type="button">
+        Ver todos
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Horizontal scrollable cards -->
+<div class="pl-margin flex gap-space-md overflow-x-auto no-scrollbar py-1"><div class="min-w-[190px] max-w-[210px] flex-shrink-0 rounded-xl bg-surface-container/60 hover:bg-surface-container border-2 border-dashed border-outline-variant hover:border-primary-container p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group cursor-pointer transition-all active:scale-[0.98]"><div class="absolute -top-10 -right-10 w-24 h-24 bg-primary-container/10 rounded-full blur-xl pointer-events-none group-hover:bg-primary-container/20 transition-all"></div><div><div class="flex items-center justify-between mb-3"><span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-md text-[11px] font-semibold tracking-wide">Personalizado</span><div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"><span class="material-symbols-outlined text-[20px]">add</span></div></div><h4 class="font-headline-md text-[17px] leading-snug text-on-surface group-hover:text-primary transition-colors">Criar Novo Treino</h4><p class="font-body-sm text-[11px] leading-tight text-on-surface-variant mt-1.5">Monte sua rotina do zero com suas cargas e repetições.</p></div><div class="mt-4 pt-3 flex items-center justify-between"><span class="text-label-md text-[12px] text-primary font-semibold flex items-center gap-1">Começar <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span><div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[16px]">edit_note</span></div></div></div>
+<!-- Card 1: Treino dos deuses -->
+<div class="min-w-[240px] max-w-[260px] flex-shrink-0 rounded-xl bg-surface-container p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl"></div>
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md tracking-wide">
+              Hipertrofia
+            </span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest/80 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">fitness_center</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Treino dos deuses
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+            Foco em peito, ombro e tríceps com sobrecarga progressiva.
+          </p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">exercise</span>
+<span class="font-label-md text-label-md">6 exercícios</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Treino de Boxe -->
+<div class="min-w-[240px] max-w-[260px] flex-shrink-0 rounded-xl bg-surface-container p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-high transition-all">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-tint/10 rounded-full blur-2xl"></div>
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-surface-tint font-label-md text-label-md tracking-wide">
+              Combate &amp; Cardio
+            </span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest/80 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">sports_mma</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Treino de Boxe
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+            Rounds intensos com saco de pancadas e esquivas rápidas.
+          </p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-label-md text-label-md">8 rounds • 35 min</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest group-hover:bg-primary-container group-hover:text-on-primary text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Mobilidade & Core (extra delight card) -->
+<div class="min-w-[240px] max-w-[260px] flex-shrink-0 rounded-xl bg-surface-container p-space-md flex flex-col justify-between shadow-lg relative overflow-hidden group hover:bg-surface-container-high transition-all pr-margin">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md tracking-wide">
+              Recuperação
+            </span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest/80 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+            Core &amp; Mobilidade
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+            Liberação miofascial e estabilidade lombar ativa.
+          </p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">pace</span>
+<span class="font-label-md text-label-md">20 min</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest group-hover:bg-primary-container group-hover:text-on-primary text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: "Treino Imediato" Quick-Start Grid -->
+<div class="px-margin flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-4 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Modalidade de Treino</h3>
+</div>
+
+</div>
+<!-- Quick action stack -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Item 1: Musculação -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer active:scale-[0.99]">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">fitness_center</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Musculação</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registro livre de séries e cargas</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary text-primary flex items-center justify-center flex-shrink-0 transition-all active:scale-90" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Item 2: Artes Marciais -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer active:scale-[0.99]">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">sports_kabaddi</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Artes Marciais</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cronômetro de rounds e intervalos</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary text-primary flex items-center justify-center flex-shrink-0 transition-all active:scale-90" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+<!-- Item 3: Calistenia -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer active:scale-[0.99]">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">accessibility</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Calistenia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Peso corporal, barras e isometria</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary text-primary flex items-center justify-center flex-shrink-0 transition-all active:scale-90" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Weekly Activity Mini-Sparkline Delight Section -->
+<div class="px-margin">
+
+</div>
+</div>
+<script>
+  (function() {
+    // Subtle interactive micro-animation for progress bar fill on load
+    const pBar = document.getElementById('routine-progress-bar');
+    if (pBar) {
+      setTimeout(() => {
+        pBar.style.width = '12%';
+      }, 400);
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.25)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs grid grid-cols-5 items-center justify-items-center"><a aria-current="page" class="flex flex-col items-center justify-center w-full h-14 transition-colors text-primary-container font-semibold" data-path="treinos" href="#"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Treinos</span></a><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="atividades" href="#"><span class="material-symbols-outlined text-[22px]">ecg_heart</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Atividades</span></a><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="exercicios" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Exercícios</span></a><a class="flex flex-col items-center justify-center w-full h-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="corpo" href="#"><span class="material-symbols-outlined text-[22px]">accessibility_new</span><span class="font-label-md text-[11px] leading-tight tracking-tight mt-0.5">Corpo</span></a></div></nav>
+
+
+
+</body></html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error-container": "#93000a", "on-secondary-fixed": "#201b16", "secondary-fixed": "#ebe0d9", "surface-variant": "#373432", "surface-container-high": "#2c2927", "surface-bright": "#3c3936", "on-error-container": "#ffdad6", "on-primary-container": "#5a2b00", "surface": "#151311", "secondary": "#cfc5bd", "surface-tint": "#ffb783", "outline-variant": "#564336", "on-secondary": "#352f2a", "on-primary-fixed": "#301400", "background": "#151311", "tertiary": "#cfc4be", "on-secondary-container": "#c0b7af", "surface-container-lowest": "#100e0c", "secondary-container": "#4f4842", "inverse-surface": "#e8e1dd", "on-secondary-fixed-variant": "#4c4640", "error": "#ffb4ab", "inverse-primary": "#934b00", "on-primary": "#4f2500", "on-tertiary": "#362f2b", "primary-fixed": "#ffdcc5", "on-surface": "#e8e1dd", "on-error": "#690005", "on-tertiary-fixed": "#201a17", "surface-container-highest": "#373432", "on-primary-fixed-variant": "#703700", "inverse-on-surface": "#33302d", "on-surface-variant": "#dcc1b0", "surface-container": "#221f1d", "primary": "#ffb783", "tertiary-fixed": "#ece0da", "on-background": "#e8e1dd", "tertiary-fixed-dim": "#cfc4be", "surface-dim": "#151311", "tertiary-container": "#a99f99", "primary-container": "#f28522", "on-tertiary-container": "#3d3732", "outline": "#a48c7c", "on-tertiary-fixed-variant": "#4d4541", "primary-fixed-dim": "#ffb783", "secondary-fixed-dim": "#cfc5bd", "surface-container-low": "#1d1b19" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin": "1.25rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "gutter": "1rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "metric-display": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "metric-display": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><main class="flex flex-col relative w-full pt-safe pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Top Utility Bar -->
+<div class="flex items-center justify-between px-margin py-space-sm">
+<button aria-label="Fechar treino" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary-container">timer</span>
+<span>15:40 total</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">rule</span>
+<span>Forma</span>
+</button>
+</div>
+<!-- Workout & Exercise Header Context -->
+<div class="px-margin mt-space-sm flex flex-col gap-2">
+<div class="flex flex-wrap items-center gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>EM ANDAMENTO</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md">Exercício 2 de 6</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-tertiary font-label-md text-label-md">Calistenia Pro</span>
+</div>
+<div class="flex items-start justify-between mt-1">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-8 bg-primary-container rounded-full"></div>
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Front Lever (Hold)</h1>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center gap-1 text-primary text-label-md font-label-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+              Nível 4 • Avançado
+            </span>
+<span class="text-outline text-label-md">•</span>
+<span class="text-on-surface-variant font-label-md text-label-md">+0 kg Lastro</span>
+</div>
+</div>
+</div>
+<div class="flex gap-1.5">
+<button aria-label="Ver progressões" class="h-8 px-2.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">tune</span>
+<span>Níveis</span>
+</button>
+<button aria-label="Adicionar nota" class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cinematic Athlete Visual Anchor -->
+<div class="px-margin mt-space-md">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center" data-alt="Muscular male gymnast performing a horizontal front lever hold suspended on wooden rings in a dim atmospheric warehouse gym, dramatic low-key rim lighting showing defined back and core muscles, moody warm amber practical light in dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6duA5RsLpuDC5drzrSTqX_KH_tFOA0oMXYb6PxItwbm02b48ssO-6EbrqXbSedpLukysFTSIwyU7S1RlEpIMInHrLaH5HhsMPpn3_PJ4iDWtNEeugIF41-fY8ZxWjcl4DcqvagyLXBbRq9sU0bdsDYr0ZaseOxpLcQwaX6nUx8X0H5IV4UMueiCzal2OISLdoBnCgjLduDO5eU41U0xjzUwLHdebGzK6ZVQiawTrc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface/90 text-on-surface text-label-md font-label-md backdrop-blur-sm">
+<span class="material-symbols-outlined text-[15px] text-primary-container">adjust</span>
+<span>Alvo: Dorsal, Core &amp; Deltóides</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/80 text-secondary text-label-md font-label-md">Argolas Olímpicas</span>
+</div>
+</div>
+</div>
+<!-- Mode Toggle (Isometria vs Repetições) -->
+<div class="px-margin mt-space-md">
+<div class="flex p-1 bg-surface-container-lowest rounded-full max-w-xs mx-auto">
+<button class="flex-1 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm" id="tab-iso" type="button">
+        Isometria (Seg)
+      </button>
+<button class="flex-1 py-1.5 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all" id="tab-reps" type="button">
+        Repetições
+      </button>
+</div>
+</div>
+<!-- Circular Countdown Hold Ring Component -->
+<div class="px-margin mt-space-md flex flex-col items-center">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Glow Underlay -->
+<div class="absolute w-44 h-44 rounded-full bg-primary-container/10 blur-xl"></div>
+<!-- Circular Progress SVG -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 240 240">
+<!-- Track Ring -->
+<circle cx="120" cy="120" fill="none" r="100" stroke="#221f1d" stroke-width="12"></circle>
+<!-- Animated Active Arc (Circumference ~628, 24/30 = 80% filled -> 125 remaining offset) -->
+<circle class="transition-all duration-1000 ease-linear" cx="120" cy="120" fill="none" id="timer-ring" r="100" stroke="#f28522" stroke-dasharray="628.3" stroke-dashoffset="125.6" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Countdown Metrics -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-primary font-label-md text-label-md tracking-wider uppercase mb-0.5">• SÉRIE 2 DE 4 •</span>
+<div class="font-metric-display text-metric-display text-on-surface font-extrabold tracking-tight" id="countdown-val">
+          00:24
+        </div>
+<div class="flex items-center gap-1 mt-1 text-on-surface-variant font-label-md text-label-md">
+<span>Alvo:</span>
+<span class="text-on-surface font-bold">00:30 seg</span>
+</div>
+</div>
+</div>
+<!-- Quick Micro-adjust Controls -->
+<div class="flex items-center gap-3 mt-space-xs">
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors active:scale-95" id="btn-minus-5" type="button">
+        -5s
+      </button>
+<button class="w-11 h-11 rounded-full bg-surface-container-high text-primary flex items-center justify-center hover:bg-surface-bright transition-colors active:scale-95" id="btn-toggle-timer" type="button">
+<span class="material-symbols-outlined text-[24px]" id="play-pause-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors active:scale-95" id="btn-plus-5" type="button">
+        +5s
+      </button>
+</div>
+</div>
+<!-- Set Progression Tracker -->
+<div class="px-margin mt-space-lg flex flex-col gap-2.5">
+<div class="flex items-center justify-between mb-1">
+<span class="text-secondary font-label-md text-label-md tracking-wider uppercase">Progressão de Séries</span>
+<span class="text-primary font-label-md text-label-md">Alvo: 4x Isometria Máxima</span>
+</div>
+<!-- Set 1 (Completed) -->
+<div class="p-3.5 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Série 1</span>
+<span class="text-primary text-label-md font-label-md">✓ Feito</span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm">30s sustentado • Forma limpa</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface">30s</span>
+<span class="block text-outline font-label-md text-label-md">100% alvo</span>
+</div>
+</div>
+<!-- Set 2 (Current Active Set) -->
+<div class="relative p-3.5 rounded-xl bg-surface-container-high flex items-center justify-between overflow-hidden shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-center gap-3 pl-1">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md">
+          2
+        </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Série 2</span>
+<span class="px-2 py-0.2 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+              Ativa
+            </span>
+</div>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Alvo programado: 30 segundos</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary-container">00:24</span>
+<span class="block text-on-surface-variant font-label-md text-label-md">Restam 6s</span>
+</div>
+</div>
+<!-- Set 3 (Pending) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between opacity-80">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-secondary">Série 3</span>
+<span class="block text-outline font-body-sm text-body-sm">Alvo: 30s sustentado</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-secondary">30s</span>
+<span class="block text-outline font-label-md text-label-md">Espera</span>
+</div>
+</div>
+<!-- Set 4 (Pending Failure Challenge) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between opacity-60">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-secondary">Série 4</span>
+<span class="block text-outline font-body-sm text-body-sm">Série Final • Até a Falha</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-secondary">MAX</span>
+<span class="block text-outline font-label-md text-label-md">Sobrecarga</span>
+</div>
+</div>
+</div>
+<!-- Tactical Form Cue Card -->
+<div class="px-margin mt-space-md">
+<div class="p-4 rounded-xl bg-surface-container-low flex gap-3 items-start">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="flex-1">
+<span class="text-primary font-label-md text-label-md">Dica Técnica de Postura</span>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-0.5 leading-relaxed">
+          Mantenha a retroversão pélvica e depressão escapular ativa para travar a alavanca. Evite quebrar a linha do quadril ou curvar a cervical.
+        </p>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Active Workout Controls Player -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface-container-lowest/95 backdrop-blur-md rounded-t-2xl shadow-xl z-20">
+<div class="max-w-md mx-auto flex flex-col gap-3">
+<!-- Status Feedback Line -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Mantenha a posição! 🔥</span>
+</div>
+<span class="text-primary text-label-md font-label-md">Trave os glúteos e abdômen</span>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center gap-3">
+<button class="h-[52px] px-5 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-surface-container-high transition-colors active:scale-95 shrink-0" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Voltar</span>
+</button>
+<button class="flex-1 h-[52px] px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20 hover:brightness-105 transition-all active:scale-98" id="btn-complete-set" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Concluir Série</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let timeLeft = 24;
+    const totalTarget = 30;
+    let isRunning = true;
+    const countdownEl = document.getElementById('countdown-val');
+    const ringEl = document.getElementById('timer-ring');
+    const playPauseIcon = document.getElementById('play-pause-icon');
+    const btnToggle = document.getElementById('btn-toggle-timer');
+    const btnPlus = document.getElementById('btn-plus-5');
+    const btnMinus = document.getElementById('btn-minus-5');
+    const btnComplete = document.getElementById('btn-complete-set');
+    const tabIso = document.getElementById('tab-iso');
+    const tabReps = document.getElementById('tab-reps');
+
+    const fullCircumference = 628.3;
+
+    function updateDisplay() {
+      const clamped = Math.max(0, timeLeft);
+      const str = clamped < 10 ? '0' + clamped : clamped;
+      if (countdownEl) countdownEl.textContent = '00:' + str;
+
+      if (ringEl) {
+        // offset: 0 is completely filled, 628.3 is empty
+        const ratio = clamped / totalTarget;
+        const offset = fullCircumference * (1 - ratio);
+        ringEl.style.strokeDashoffset = Math.max(0, Math.min(fullCircumference, offset));
+      }
+    }
+
+    const interval = setInterval(function() {
+      if (isRunning && timeLeft > 0) {
+        timeLeft -= 1;
+        updateDisplay();
+      }
+    }, 1000);
+
+    if (btnToggle) {
+      btnToggle.addEventListener('click', function() {
+        isRunning = !isRunning;
+        playPauseIcon.textContent = isRunning ? 'pause' : 'play_arrow';
+      });
+    }
+
+    if (btnPlus) {
+      btnPlus.addEventListener('click', function() {
+        timeLeft = Math.min(totalTarget, timeLeft + 5);
+        updateDisplay();
+      });
+    }
+
+    if (btnMinus) {
+      btnMinus.addEventListener('click', function() {
+        timeLeft = Math.max(0, timeLeft - 5);
+        updateDisplay();
+      });
+    }
+
+    if (btnComplete) {
+      btnComplete.addEventListener('click', function() {
+        isRunning = false;
+        timeLeft = 0;
+        updateDisplay();
+        btnComplete.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> Série Registrada!';
+        btnComplete.classList.remove('bg-primary-container');
+        btnComplete.classList.add('bg-surface-bright', 'text-on-surface');
+      });
+    }
+
+    if (tabIso && tabReps) {
+      tabIso.addEventListener('click', function() {
+        tabIso.className = 'flex-1 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm';
+        tabReps.className = 'flex-1 py-1.5 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+      tabReps.addEventListener('click', function() {
+        tabReps.className = 'flex-1 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm';
+        tabIso.className = 'flex-1 py-1.5 rounded-full text-secondary font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+    }
+  })();
+</script></main></body></html>
